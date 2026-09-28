@@ -3,3 +3,6 @@ design-system-pages/
 .DS_Store
 Thumbs.db
 *.log
+dev-server.js
+package.json
+package-lock.json
