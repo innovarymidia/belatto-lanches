@@ -31,13 +31,9 @@ O Belatto possui duas operações com propósitos complementares:
 ### Pré-requisitos
 - Node.js (v18+)
 
-### Iniciar o Servidor
+### Iniciar o Servidor Local
 ```bash
-npm start
-```
-Ou diretamente:
-```bash
-node server.js
+node dev-server.js
 ```
 Acesse no navegador: `http://localhost:3000`
 
