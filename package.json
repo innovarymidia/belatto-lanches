@@ -1,11 +1,9 @@
 {
   "name": "belatto-site",
   "version": "1.0.0",
-  "description": "Landing Page Premium Oficial Belatto Lanches - Cuiabá MT",
-  "main": "server.js",
+  "description": "Landing Page Premium Oficial Belatto Lanches - Cuiaba MT",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node dev-server.js"
   },
   "keywords": [
     "belatto",
@@ -14,6 +12,6 @@
     "cuiaba",
     "baguncinha"
   ],
-  "author": "Innovary Mídia",
+  "author": "Innovary Midia",
   "license": "ISC"
 }
