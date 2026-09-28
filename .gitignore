@@ -1,0 +1,5 @@
+node_modules/
+design-system-pages/
+.DS_Store
+Thumbs.db
+*.log

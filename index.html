@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belatto Lanches | Loja e Delivery em Cuiabá</title>
+  <meta name="description" content="Belatto Lanches em Cuiabá. Escolha entre a Belatto Loja ou Belatto Delivery e aproveite seu lanche do seu jeito. Fecha com um Belatto.">
+  <meta name="keywords" content="Belatto Lanches, Baguncinha Cuiabá, Hambúrguer Artesanal Cuiabá, Belatto Loja, Belatto Delivery, MandarPedido Belatto">
+  <link rel="canonical" href="https://belattolanches.mandarpedido.com/">
+
+  <!-- Open Graph / Meta Compartilhamento -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Belatto Lanches | Loja e Delivery em Cuiabá">
+  <meta property="og:description" content="Tem momento que só fecha com Belatto. Escolha entre atendimento no salão na Belatto Loja ou delivery quentinho na sua casa.">
+  <meta property="og:image" content="assets/hero-burger.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo-belatto-red.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit e Bebas Neue -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos Principais -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org / JSON-LD para Restaurante e Unidades -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Belatto Lanches",
+    "image": "assets/hero-burger.jpg",
+    "servesCuisine": "Lanches, Hambúrgueres artesanais, Baguncinha Cuiabano, Hot Dogs",
+    "telephone": "+5565996838193",
+    "url": "https://belattolanches.mandarpedido.com/mobile/home",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Presidente Getúlio Vargas, 800A",
+      "addressLocality": "Cuiabá",
+      "addressRegion": "MT",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday"],
+        "opens": "18:00",
+        "closes": "02:00"
+      }
+    ],
+    "department": [
+      {
+        "@type": "Restaurant",
+        "name": "Belatto Loja",
+        "telephone": "+5565996838193",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Presidente Getúlio Vargas, 800A, Centro Norte",
+          "addressLocality": "Cuiabá",
+          "addressRegion": "MT"
+        }
+      },
+      {
+        "@type": "FoodEstablishment",
+        "name": "Belatto Delivery",
+        "telephone": "+556530230496",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. São Sebastião, 2124, Popular",
+          "addressLocality": "Cuiabá",
+          "addressRegion": "MT"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ====================================================================
+       01. HEADER PREMIUM
+       ==================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand-logo-link" aria-label="Belatto Lanches, Página Inicial">
+        <img src="assets/logo-belatto-white.png" alt="Belatto Lanches" class="brand-logo-img">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Navegação Principal">
+        <a href="#inicio" class="nav-link" data-track="click_nav_inicio">Início</a>
+        <a href="#experiencia" class="nav-link" data-track="click_nav_experiencia">Como Viver Seu Belatto</a>
+        <a href="#spotlight" class="nav-link" data-track="click_nav_spotlight">O Baguncinha</a>
+        <a href="#cardapio" class="nav-link" data-track="click_nav_cardapio">Cardápio</a>
+        <a href="#momentos" class="nav-link" data-track="click_nav_momentos">Momentos</a>
+        <a href="#faq" class="nav-link" data-track="click_nav_faq">Dúvidas</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn-header-cta" id="btn-header-pedir" data-action="open-decision-modal">
+          <span>Pedir Agora</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+
+        <button type="button" class="menu-toggle" id="menu-toggle-btn" aria-label="Abrir Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+      <a href="#inicio" class="nav-link mobile-link">Início</a>
+      <a href="#experiencia" class="nav-link mobile-link">Como Viver Seu Belatto</a>
+      <a href="#spotlight" class="nav-link mobile-link">O Baguncinha</a>
+      <a href="#cardapio" class="nav-link mobile-link">Cardápio</a>
+      <a href="#momentos" class="nav-link mobile-link">Momentos</a>
+      <a href="#faq" class="nav-link mobile-link">Dúvidas Frequentes</a>
+      <button type="button" class="btn-header-cta" style="width:100%; justify-content:center; margin-top:8px;" data-action="open-decision-modal">
+        Pedir Agora
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         02. HERO SECTION COM ESCOLHA IMEDIATA
+         ==================================================================== -->
+    <section class="hero-section" id="inicio">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Texto e Escolha de Unidade -->
+          <div class="hero-content">
+            <div class="hero-tagline-wrap">
+              <span class="badge-pill badge-red-outline">
+                O Autêntico Lanche de Cuiabá
+              </span>
+            </div>
+
+            <h1 class="hero-title">
+              A FOME APERTOU?<br>
+              <span class="highlight-red">FECHA COM UM BELATTO.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Escolha como você quer seu Belatto. Duas operações completas pensadas para o seu momento.
+            </p>
+
+            <!-- Box de Decisão Imediata -->
+            <div class="hero-decision-box">
+              <div class="hero-decision-label">
+                <span class="bullet-red"></span>
+                <span>Escolha como você quer viver seu Belatto</span>
+              </div>
+
+              <div class="hero-cta-group">
+                <!-- Opção 1: Belatto Loja -->
+                <button type="button" class="hero-cta-card hero-cta-loja" data-action="open-loja-modal" id="hero-btn-loja">
+                  <div class="cta-card-header">
+                    <span class="cta-card-name">IR PARA A BELATTO LOJA</span>
+                    <span class="cta-card-icon">🏛️</span>
+                  </div>
+                  <span class="cta-card-sub">Você vem até a gente. Salão climatizado e retirada.</span>
+                </button>
+
+                <!-- Opção 2: Belatto Delivery -->
+                <button type="button" class="hero-cta-card hero-cta-delivery" data-action="open-delivery-modal" id="hero-btn-delivery">
+                  <div class="cta-card-header">
+                    <span class="cta-card-name">PEDIR BELATTO DELIVERY</span>
+                    <span class="cta-card-icon">🛵</span>
+                  </div>
+                  <span class="cta-card-sub">A gente chega até você. Pedido online, entrega e retirada.</span>
+                </button>
+              </div>
+
+              <!-- Resumo Imediato sem rolar a página -->
+              <div class="hero-unit-summary-list">
+                <div class="hero-unit-summary-item">
+                  <strong>BELATTO LOJA</strong>
+                  <span>Atendimento presencial, consumo no local e retirada</span>
+                </div>
+                <div class="hero-unit-summary-item">
+                  <strong>BELATTO DELIVERY</strong>
+                  <span>Delivery, pedidos online e retirada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mídia Visual / Foto de Produto em Alta Resolução -->
+          <div class="hero-media">
+            <div class="hero-image-frame">
+              <img src="assets/hero-burger.jpg" alt="Hambúrguer artesanal Belatto com bacon crocante e queijo derretido" class="hero-main-img" width="600" height="600" fetchpriority="high">
+            </div>
+
+            <!-- Floating Badge Superior -->
+            <div class="hero-floating-badge badge-top">
+              <div class="badge-icon-box">🥩</div>
+              <div class="badge-text-box">
+                <strong>Chapa Quente na Manteiga</strong>
+                <span>Sabor Raiz de Cuiabá</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge Inferior -->
+            <div class="hero-floating-badge badge-bottom">
+              <div class="badge-icon-box" style="background:#FFFFFF; color:var(--red-belatto);">📦</div>
+              <div class="badge-text-box">
+                <strong>Embalagem com Lacre Oficial</strong>
+                <span>Temperatura e crocância protegidas</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         03. SEÇÃO: DESTAQUE DE PRODUTO REAL (SEÇÃO CLARA / EDITORIAL)
+         Inspirado na segunda dobra da nova referência visual
+         ==================================================================== -->
+    <section class="spotlight-section" id="spotlight">
+      <div class="container">
+        <div class="spotlight-grid">
+          
+          <!-- Foto Real do Baguncinha com Embalagem e Guardanapo Oficial -->
+          <div class="spotlight-media">
+            <div class="spotlight-img-wrap">
+              <img src="assets/belatto-baguncinha-real-1.jpg" alt="O autêntico Baguncinha Belatto com ovo, bacon, hambúrguer e guardanapo oficial" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Conteúdo Descritivo -->
+          <div class="spotlight-content">
+            <span class="spotlight-kicker">O SÍMBOLO DA CASA</span>
+            <h2 class="spotlight-title">O Autêntico Baguncinha de Cuiabá</h2>
+            <p class="spotlight-desc">
+              Receita artesanal preparada na chapa com ingredientes frescos, ponto de cozimento perfeito e a apresentação que você só encontra no Belatto.
+            </p>
+
+            <div class="spotlight-ingredients-list">
+              <div class="spotlight-item">
+                <div class="spotlight-item-icon">🥩</div>
+                <div class="spotlight-item-text">
+                  <strong>Carne Grelhada e Queijo Derretido</strong>
+                  <p>Hambúrguer suculento chapeado com queijo muçarela abundante e presunto tostado.</p>
+                </div>
+              </div>
+
+              <div class="spotlight-item">
+                <div class="spotlight-item-icon">🥓</div>
+                <div class="spotlight-item-text">
+                  <strong>Ovo no Ponto e Bacon Crocante</strong>
+                  <p>Ovo com gema macia e fatias de bacon crocante douradas na medida certa.</p>
+                </div>
+              </div>
+
+              <div class="spotlight-item">
+                <div class="spotlight-item-icon">🌿</div>
+                <div class="spotlight-item-text">
+                  <strong>A Clássica Maionese Verde</strong>
+                  <p>Feita na casa todos os dias com ervas frescas e sabor inconfundível.</p>
+                </div>
+              </div>
+
+              <div class="spotlight-item">
+                <div class="spotlight-item-icon">🥖</div>
+                <div class="spotlight-item-text">
+                  <strong>Pão Macio Selado na Chapa</strong>
+                  <p>Pão especial dourado na manteiga para manter o lanche macio e firme.</p>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 10px;">
+              <button type="button" class="btn-header-cta" data-action="open-decision-modal">
+                <span>Experimentar Agora</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         04. SEÇÃO: IMPACTO VERMELHO BELATTO (PILARES E CRAFT)
+         Inspirada no bloco de cor sólida da nova referência (paleta exclusiva)
+         ==================================================================== -->
+    <section class="red-impact-section">
+      <div class="container">
+        
+        <header class="red-impact-header">
+          <span class="red-impact-kicker">PADRÃO BELATTO DE QUALIDADE</span>
+          <h2 class="red-impact-title">Cada mordida fecha com a sua fome.</h2>
+          <p class="red-impact-sub">
+            Tradição na chapa e respeito ao paladar de Cuiabá. Sem atalhos, com capricho em cada etapa.
+          </p>
+        </header>
+
+        <div class="red-impact-grid">
+          
+          <div class="red-impact-card">
+            <span class="red-card-icon">🔥</span>
+            <h3 class="red-card-title">Chapa Quente na Manteiga</h3>
+            <p class="red-card-desc">Selamento rápido que mantém a carne suculenta e o pão tostadinho por fora.</p>
+          </div>
+
+          <div class="red-impact-card">
+            <span class="red-card-icon">🥓</span>
+            <h3 class="red-card-title">Bacon em Pedaços Crocantes</h3>
+            <p class="red-card-desc">Bacon de primeira qualidade dourado até atingir a crocância irresistível.</p>
+          </div>
+
+          <div class="red-impact-card">
+            <span class="red-card-icon">📦</span>
+            <h3 class="red-card-title">Embalagem com Lacre Oficial</h3>
+            <p class="red-card-desc">Caixas estruturadas e sacolas térmicas lacradas para preservar o calor.</p>
+          </div>
+
+          <div class="red-impact-card">
+            <span class="red-card-icon">❤️</span>
+            <h3 class="red-card-title">Duas Formas de Viver a Marca</h3>
+            <p class="red-card-desc">Aproveite no salão da Belatto Loja ou receba onde estiver com a Belatto Delivery.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         05. SEÇÃO: ESCOLHA SUA EXPERIÊNCIA (CENTRAL DE DIRECIONAMENTO)
+         ==================================================================== -->
+    <section class="experience-section" id="experiencia">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-kicker">QUAL É O SEU MOMENTO?</span>
+          <h2 class="section-title">Como você quer viver seu Belatto hoje?</h2>
+          <p class="section-desc">
+            Cada unidade possui uma operação específica para garantir agilidade e excelência. Escolha a sua experiência:
+          </p>
+        </header>
+
+        <div class="experience-grid">
+          
+          <!-- Card BELATTO LOJA com a Foto Real da Fachada -->
+          <article class="experience-card card-loja" id="card-belatto-loja">
+            <div class="exp-media">
+              <img src="assets/belatto-loja-fachada-real.png" alt="Fachada iluminada e salão da Belatto Loja na Getúlio Vargas" loading="lazy">
+              <div class="exp-media-overlay"></div>
+              <div class="exp-badge-top">
+                <span class="badge-pill badge-red">VOCÊ VEM ATÉ A GENTE</span>
+              </div>
+            </div>
+
+            <div class="exp-body">
+              <h3 class="exp-unit-name">BELATTO LOJA</h3>
+              <p class="exp-headline">"Quer sentar, relaxar e curtir o ambiente? A casa é sua."</p>
+              <p class="exp-desc">
+                Ideal para reunir a galera, curtir com a família ou fazer aquela pausa gostosa da noite. Salão confortável e climatizado no Centro Norte de Cuiabá com atendimento completo na mesa e opção de retirada rápida no balcão.
+              </p>
+
+              <ul class="exp-features-list">
+                <li>
+                  <span class="exp-check-icon">✓</span>
+                  <span><strong>Atendimento Presencial:</strong> Mesas e ambiente climatizado</span>
+                </li>
+                <li>
+                  <span class="exp-check-icon">✓</span>
+                  <span><strong>Consumo no Local:</strong> Lanche saindo direto da chapa para a sua mesa</span>
+                </li>
+                <li>
+                  <span class="exp-check-icon">✓</span>
+                  <span><strong>Retirada:</strong> Passe na loja e retire seu lanche quentinho</span>
+                </li>
+                <li>
+                  <span class="exp-check-icon">✓</span>
+                  <span><strong>Endereço:</strong> Av. Presidente Getúlio Vargas, 800A, Centro Norte, Cuiabá MT</span>
+                </li>
+              </ul>
+
+              <div class="exp-hours-badge">
+                <strong>Horário Oficial de Funcionamento:</strong>
+                Quinta a terça, das 18h às 02h da madrugada.<br>
+                <span class="closed">Quarta-feira: FECHADO</span>
+              </div>
+
+              <div style="display:flex; gap:12px; margin-top:auto;">
+                <button type="button" class="exp-btn-cta" data-action="open-loja-modal">
+                  <span>Ver a Loja</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card BELATTO DELIVERY com Embalagens Oficiais -->
+          <article class="experience-card card-delivery" id="card-belatto-delivery">
+            <div class="exp-media">
+              <img src="assets/belatto-sacola-delivery.jpg" alt="Sacolas e embalagens oficiais do Belatto Delivery" loading="lazy">
+              <div class="exp-media-overlay"></div>
+              <div class="exp-badge-top">
+                <span class="badge-pill badge-white">A GENTE CHEGA ATÉ VOCÊ</span>
+              </div>
+            </div>
+
+            <div class="exp-body">
+              <h3 class="exp-unit-name">BELATTO DELIVERY</h3>
+              <p class="exp-headline">"Para quem quer pedir de onde estiver."</p>
+              <p class="exp-desc">
+                Aquela fome bateu? A gente leva até você. No sofá, no plantão ou na resenha com os amigos: peça online e receba seu lanche quentinho com embalagem térmica lacrada, ou faça seu pedido para retirada.
+              </p>
+
+              <ul class="exp-features-list">
+                <li>
+                  <span class="exp-check-icon" style="background:rgba(255,255,255,0.15); color:#fff;">✓</span>
+                  <span><strong>Delivery:</strong> Entrega ágil nas principais regiões de Cuiabá</span>
+                </li>
+                <li>
+                  <span class="exp-check-icon" style="background:rgba(255,255,255,0.15); color:#fff;">✓</span>
+                  <span><strong>Pedidos Online:</strong> Peça com facilidade no Site Oficial, iFood ou WhatsApp</span>
+                </li>
+                <li>
+                  <span class="exp-check-icon" style="background:rgba(255,255,255,0.15); color:#fff;">✓</span>
+                  <span><strong>Retirada:</strong> Opção de fazer o pedido e retirar na base da São Sebastião</span>
+                </li>
+                <li>
+                  <span class="exp-check-icon" style="background:rgba(255,255,255,0.15); color:#fff;">✓</span>
+                  <span><strong>Endereço:</strong> Av. São Sebastião, 2124, Popular, Cuiabá MT</span>
+                </li>
+              </ul>
+
+              <div class="exp-hours-badge">
+                <strong>Horário Oficial de Funcionamento:</strong>
+                Terça a domingo, das 18h às 23h.<br>
+                <span class="closed">Segunda-feira: FECHADO</span>
+              </div>
+
+              <div style="display:flex; gap:12px; margin-top:auto;">
+                <button type="button" class="exp-btn-cta" data-action="open-delivery-modal">
+                  <span>Pedir Agora</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         06. SEÇÃO: CARDÁPIO DE PRODUTOS REAIS (SEÇÃO CLARA / EDITORIAL)
+         Inspirada na quarta dobra ("Today's Best Offer") da referência
+         ==================================================================== -->
+    <section class="menu-section" id="cardapio">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-kicker" style="color:var(--red-belatto);">CARDÁPIO SELECIONADO</span>
+          <h2 class="section-title light-text">Deu fome? Fecha com um Belatto.</h2>
+          <p class="section-desc light-text">
+            Ingredientes selecionados, carnes grelhadas com capricho e receitas autênticas que conquistaram Cuiabá.
+          </p>
+        </header>
+
+        <!-- Barra de Filtros -->
+        <div class="menu-filter-bar" role="tablist">
+          <button type="button" class="filter-btn active" data-filter="all">Todos os Lanches</button>
+          <button type="button" class="filter-btn" data-filter="populares">Mais Pedidos</button>
+          <button type="button" class="filter-btn" data-filter="burgers">Hambúrgueres</button>
+          <button type="button" class="filter-btn" data-filter="dogs">Prensados e Dogs</button>
+          <button type="button" class="filter-btn" data-filter="porcoes">Porções</button>
+          <button type="button" class="filter-btn" data-filter="bebidas">Bebidas e Combos</button>
+        </div>
+
+        <!-- Grid de Produtos Dinâmicos / Reais -->
+        <div class="products-grid" id="products-grid-container">
+          <!-- Inserido dinamicamente via JS com dados do config.js -->
+        </div>
+
+        <!-- Link Direto para Cardápio Completo de Pedidos -->
+        <div style="text-align: center; margin-top: 50px;">
+          <a href="https://belattolanches.mandarpedido.com/mobile/home" target="_blank" rel="noopener" class="social-link" style="padding: 14px 28px; background: var(--text-dark); color: #fff; font-size: 0.95rem;" data-track="click_cardapio_completo">
+            <span>Ver Cardápio Completo com Preços no Site de Pedidos</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         07. SEÇÃO: "BELATTO NOS MOMENTOS" (CONCEITO DO DESIGN SYSTEM)
+         ==================================================================== -->
+    <section class="moments-section" id="momentos">
+      <div class="container">
+        
+        <div class="moments-header-wrap">
+          <div>
+            <span class="section-kicker">PARTE DO SEU MOMENTO</span>
+            <h2 class="section-title">Tem momento que só fecha com Belatto.</h2>
+          </div>
+          <p class="section-desc" style="max-width: 440px;">
+            O Belatto não é apenas um lanche. É a recompensa do dia puxado, a energia pós balada e a resenha boa com a galera.
+          </p>
+        </div>
+
+        <div class="moments-grid">
+          
+          <!-- Momento 1: Balada -->
+          <div class="moment-card">
+            <div class="moment-img-wrap">
+              <img src="assets/belatto-lifestyle-balada.jpg" alt="Jovens rindo e comendo Belatto depois da balada" loading="lazy">
+              <div class="moment-overlay"></div>
+            </div>
+            <div class="moment-content">
+              <h3 class="moment-title">Balada foi intensa?</h3>
+              <span class="moment-action">Pega um Belatto →</span>
+              <p class="moment-desc">A pista ferveu e a fome apertou. Passe na Belatto Loja ou faça seu pedido de onde estiver.</p>
+            </div>
+          </div>
+
+          <!-- Momento 2: Show -->
+          <div class="moment-card">
+            <div class="moment-img-wrap">
+              <img src="assets/belatto-lifestyle-show.jpg" alt="Galera comendo hambúrguer após o show" loading="lazy">
+              <div class="moment-overlay"></div>
+            </div>
+            <div class="moment-content">
+              <h3 class="moment-title">Cantou todas no show?</h3>
+              <span class="moment-action">Passa no Belatto →</span>
+              <p class="moment-desc">A voz se foi e bateu aquele desejo incontrolável de um baguncinha prensado na chapa.</p>
+            </div>
+          </div>
+
+          <!-- Momento 3: Série -->
+          <div class="moment-card">
+            <div class="moment-img-wrap">
+              <img src="assets/belatto-story-serie.jpg" alt="Casal no sofá assistindo série com lanche Belatto" loading="lazy">
+              <div class="moment-overlay"></div>
+            </div>
+            <div class="moment-content">
+              <h3 class="moment-title">Episódio novo da série?</h3>
+              <span class="moment-action">Assiste com Belatto →</span>
+              <p class="moment-desc">Sofá, cobertor e o interfone tocando com a sacola térmica do Belatto Delivery.</p>
+            </div>
+          </div>
+
+          <!-- Momento 4: Trabalho -->
+          <div class="moment-card">
+            <div class="moment-img-wrap">
+              <img src="assets/belatto-story-trabalho.jpg" alt="Homem mordendo com satisfação um lanche suculento após o trabalho" loading="lazy">
+              <div class="moment-overlay"></div>
+            </div>
+            <div class="moment-content">
+              <h3 class="moment-title">Dia puxado no trabalho?</h3>
+              <span class="moment-action">Melhora com um Belatto →</span>
+              <p class="moment-desc">Depois de um dia corrido, nada substitui a sensação da primeira mordida de verdade.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         08. SEÇÃO: GALERIA EDITORIAL ASSIMÉTRICA COM FOTOS REAIS
+         ==================================================================== -->
+    <section class="gallery-section">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-kicker" style="color:var(--red-belatto);">NOSSO UNIVERSO</span>
+          <h2 class="section-title light-text">Tradição que se vê e se sente.</h2>
+          <p class="section-desc light-text">
+            Dos bastidores da chapa à alegria das mesas compartilhadas em Cuiabá.
+          </p>
+        </header>
+
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-col-6">
+            <img src="assets/belatto-loja-fachada-real.png" alt="Fachada e salão da Belatto Loja em Cuiabá" loading="lazy">
+            <span class="gallery-overlay-badge">Nossa Loja</span>
+          </div>
+
+          <div class="gallery-item gallery-col-3">
+            <img src="assets/belatto-caixa-lanche.jpg" alt="Caixa oficial de hambúrguer vermelha Belatto" loading="lazy">
+            <span class="gallery-overlay-badge">Embalagem Oficial</span>
+          </div>
+
+          <div class="gallery-item gallery-col-3">
+            <img src="assets/belatto-baguncinha-real-2.jpg" alt="Baguncinha artesanal no prato com ovo e bacon" loading="lazy">
+            <span class="gallery-overlay-badge">O Baguncinha</span>
+          </div>
+
+          <div class="gallery-item gallery-col-4">
+            <img src="assets/chapa-chef-belatto.jpg" alt="Preparo artesanal na chapa com fogo e carnes" loading="lazy">
+            <span class="gallery-overlay-badge">Chapa Artesanal</span>
+          </div>
+
+          <div class="gallery-item gallery-col-8">
+            <img src="assets/belatto-lifestyle-galera-1.jpg" alt="Amigos reunidos na mesa saboreando lanches Belatto" loading="lazy">
+            <span class="gallery-overlay-badge">Alegria na Mesa</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         09. SEÇÃO: FAQ - PERGUNTAS FREQUENTES
+         ==================================================================== -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-kicker">TIRE SUAS DÚVIDAS</span>
+          <h2 class="section-title">Informações Claras para o Seu Pedido</h2>
+          <p class="section-desc">
+            Saiba exatamente onde ir, como pedir e qual operação atende sua necessidade no momento.
+          </p>
+        </header>
+
+        <div class="faq-list" id="faq-list-container">
+          <!-- Accordions renderizados via JS com dados do config.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         10. SEÇÃO: CTA FINAL DE CONVERSÃO
+         Inspirada na última dobra da nova referência (dark, alta conversão)
+         ==================================================================== -->
+    <section class="cta-final-section">
+      <div class="container">
+        <div class="cta-final-card">
+          <span class="section-kicker">QUAL É O SEU MOMENTO?</span>
+          <h2 class="cta-final-title">FECHA COM UM BELATTO.</h2>
+          <p class="cta-final-sub">Escolha agora como você deseja viver seu lanche hoje:</p>
+
+          <div class="cta-final-buttons">
+            <button type="button" class="btn-cta-large btn-cta-loja" data-action="open-loja-modal" data-track="click_cta_final_loja">
+              <span>Ir à Belatto Loja</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+
+            <button type="button" class="btn-cta-large btn-cta-delivery" data-action="open-delivery-modal" data-track="click_cta_final_delivery">
+              <span>Pedir Belatto Delivery</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       11. FOOTER PREMIUM
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Coluna 1: Marca e Social -->
+        <div class="footer-brand-col">
+          <img src="assets/logo-belatto-white.png" alt="Belatto Lanches" loading="lazy">
+          <p class="footer-bio">
+            O sabor marcante de Cuiabá no seu momento. Do salão aconchegante da Belatto Loja à agilidade do Belatto Delivery na sua casa.
+          </p>
+          <div class="footer-social-wrap">
+            <a href="https://www.instagram.com/belattolanches/" target="_blank" rel="noopener" class="social-link" data-track="click_instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <span>@belattolanches</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Belatto Loja -->
+        <div class="footer-unit-col">
+          <h4 class="footer-col-title loja-tag">
+            <span>🏛️</span> BELATTO LOJA
+          </h4>
+          <div class="footer-unit-card">
+            <p><strong>Atendimento:</strong> Presencial, consumo no local e retirada</p>
+            <p><strong>Endereço:</strong> Av. Presidente Getúlio Vargas, 800A, Centro Norte, Cuiabá MT</p>
+            <p><strong>Horário:</strong> Quinta a terça, das 18h às 02h</p>
+            <p style="color:var(--red-belatto); font-weight:700;">Quarta-feira: FECHADO</p>
+            <p><strong>Telefone e WhatsApp:</strong> <a href="tel:+5565996838193" data-track="click_ligar_loja">(65) 99683-8193</a></p>
+            <p><a href="https://maps.google.com/?q=Av.+Presidente+Get%C3%BAlio+Vargas,+800A,+Centro+Norte,+Cuiab%C3%A1,+MT" target="_blank" rel="noopener" style="color:var(--red-belatto); font-weight:700;" data-track="click_mapa_loja">Abrir no Google Maps →</a></p>
+          </div>
+        </div>
+
+        <!-- Coluna 3: Belatto Delivery -->
+        <div class="footer-unit-col">
+          <h4 class="footer-col-title delivery-tag">
+            <span>🛵</span> BELATTO DELIVERY
+          </h4>
+          <div class="footer-unit-card">
+            <p><strong>Atendimento:</strong> Delivery, pedidos online e retirada</p>
+            <p><strong>Base de Expedição:</strong> Av. São Sebastião, 2124, Popular, Cuiabá MT</p>
+            <p><strong>Horário:</strong> Terça a domingo, das 18h às 23h</p>
+            <p style="color:var(--red-belatto); font-weight:700;">Segunda-feira: FECHADO</p>
+            <p><strong>Telefone:</strong> <a href="tel:+556530230496" data-track="click_telefone_delivery">(65) 3023-0496</a></p>
+            <p><a href="https://belattolanches.mandarpedido.com/mobile/home" target="_blank" rel="noopener" style="color:var(--red-belatto); font-weight:700;" data-track="click_site_delivery">Pedir pelo Site Oficial →</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Belatto Lanches. Todos os direitos reservados. Cuiabá, MT.</p>
+        <p>Desenvolvido por <a href="https://www.innovarymidia.com.br/" target="_blank" rel="noopener" style="color:var(--text-white); font-weight:700; text-decoration:underline;" data-track="click_innovary_midia">Innovary Mídia</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       12. MODAIS INTERATIVOS
+       ==================================================================== -->
+  
+  <!-- Modal 1: BELATTO LOJA -->
+  <div class="modal-overlay" id="modal-loja" role="dialog" aria-modal="true" aria-labelledby="modal-loja-title">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" data-action="close-modal" aria-label="Fechar Modal">✕</button>
+      
+      <div class="modal-header-strip">
+        <span class="badge-pill badge-red modal-unit-badge">VOCÊ VEM ATÉ A GENTE</span>
+        <h3 class="modal-title" id="modal-loja-title">BELATTO LOJA</h3>
+        <p class="modal-subtitle">Quer sentar, relaxar e curtir o ambiente? A casa é sua.</p>
+      </div>
+
+      <div class="modal-content-body">
+        
+        <div class="modal-info-block">
+          <span class="modal-info-label">Endereço Presencial</span>
+          <p class="modal-info-val">Av. Presidente Getúlio Vargas, 800A</p>
+          <span class="modal-info-sub">Centro Norte, Cuiabá MT (Próximo à Praça 8 de Abril)</span>
+        </div>
+
+        <div class="modal-info-block">
+          <span class="modal-info-label">Modalidades de Atendimento</span>
+          <p class="modal-info-val">
+            🍽️ Atendimento presencial • 🍔 Consumo no local • 🥡 Retirada no balcão
+          </p>
+        </div>
+
+        <div class="modal-info-block">
+          <span class="modal-info-label">Horário de Funcionamento</span>
+          <table class="modal-schedule-table">
+            <tbody>
+              <tr>
+                <td>Quinta a terça</td>
+                <td>18h às 02h</td>
+              </tr>
+              <tr>
+                <td style="color:var(--red-belatto); font-weight:700;">Quarta-feira</td>
+                <td style="color:var(--red-belatto); font-weight:700;">FECHADO</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="modal-alert-box">
+          Aviso: Esta unidade conta com salão para consumo presencial e também realiza retirada no balcão. Para pedir de onde estiver e receber em casa, escolha a Belatto Delivery.
+        </div>
+
+        <div class="modal-action-buttons">
+          <a href="tel:+5565996838193" class="btn-modal-action btn-modal-primary" data-track="click_ligar_loja">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>Ligar para a Loja: (65) 99683-8193</span>
+          </a>
+
+          <a href="https://maps.google.com/?q=Av.+Presidente+Get%C3%BAlio+Vargas,+800A,+Centro+Norte,+Cuiab%C3%A1,+MT" target="_blank" rel="noopener" class="btn-modal-action btn-modal-secondary" data-track="click_mapa_loja">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Como Chegar (Google Maps)</span>
+          </a>
+
+          <a href="https://wa.me/5565996838193?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Belatto%20Loja." target="_blank" rel="noopener" class="btn-modal-action btn-modal-whatsapp" data-track="click_whatsapp_loja">
+            <span>Falar no WhatsApp da Belatto Loja</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: BELATTO DELIVERY -->
+  <div class="modal-overlay" id="modal-delivery" role="dialog" aria-modal="true" aria-labelledby="modal-delivery-title">
+    <div class="modal-container">
+      <button type="button" class="modal-close-btn" data-action="close-modal" aria-label="Fechar Modal">✕</button>
+      
+      <div class="modal-header-strip">
+        <span class="badge-pill badge-white modal-unit-badge">A GENTE CHEGA ATÉ VOCÊ</span>
+        <h3 class="modal-title" id="modal-delivery-title">BELATTO DELIVERY</h3>
+        <p class="modal-subtitle">Aquela fome bateu? Relaxa, que a gente leva até você.</p>
+      </div>
+
+      <div class="modal-content-body">
+        
+        <div class="modal-info-block">
+          <span class="modal-info-label">Base de Expedição e Retirada</span>
+          <p class="modal-info-val">Av. São Sebastião, 2124</p>
+          <span class="modal-info-sub">Popular, Cuiabá MT (Central de entregas e retirada)</span>
+        </div>
+
+        <div class="modal-info-block">
+          <span class="modal-info-label">Modalidades</span>
+          <p class="modal-info-val">
+            🛵 Delivery rápido • 📲 Pedidos online • 🥡 Retirada
+          </p>
+        </div>
+
+        <div class="modal-info-block">
+          <span class="modal-info-label">Horário de Funcionamento</span>
+          <table class="modal-schedule-table">
+            <tbody>
+              <tr>
+                <td>Terça a domingo</td>
+                <td>18h às 23h</td>
+              </tr>
+              <tr>
+                <td style="color:var(--red-belatto); font-weight:700;">Segunda-feira</td>
+                <td style="color:var(--red-belatto); font-weight:700;">FECHADO</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="modal-alert-box">
+          Aviso: Esta unidade é focada em pedidos online, delivery e retirada. Para comer no local com atendimento de mesas, escolha a Belatto Loja.
+        </div>
+
+        <div class="modal-action-buttons">
+          <a href="https://belattolanches.mandarpedido.com/mobile/home" target="_blank" rel="noopener" class="btn-modal-action btn-modal-primary" data-track="click_pedido_delivery_site">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span>Fazer Pedido pelo Site Oficial</span>
+          </a>
+
+          <a href="https://www.ifood.com.br/delivery/cuiaba-mt/belatto-lanches-popular" target="_blank" rel="noopener" class="btn-modal-action btn-modal-ifood" data-track="click_ifood">
+            <span>Pedir pelo iFood</span>
+          </a>
+
+          <a href="https://wa.me/556530230496?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20meu%20pedido%20no%20Belatto%20Delivery." target="_blank" rel="noopener" class="btn-modal-action btn-modal-whatsapp" data-track="click_whatsapp_delivery">
+            <span>Pedir pelo WhatsApp Delivery: (65) 3023-0496</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: DECISÃO RÁPIDA (Pedir Agora) -->
+  <div class="modal-overlay" id="modal-decision" role="dialog" aria-modal="true" aria-labelledby="modal-decision-title">
+    <div class="modal-container" style="max-width:560px;">
+      <button type="button" class="modal-close-btn" data-action="close-modal" aria-label="Fechar Modal">✕</button>
+      
+      <div class="modal-header-strip" style="text-align:center;">
+        <span class="badge-pill badge-red modal-unit-badge">FECHA COM UM BELATTO</span>
+        <h3 class="modal-title" id="modal-decision-title">Como você quer seu Belatto?</h3>
+        <p class="modal-subtitle">Escolha sua experiência para direcionarmos ao atendimento perfeito:</p>
+      </div>
+
+      <div class="modal-content-body">
+        <div class="decision-modal-grid">
+          
+          <button type="button" class="btn-decision-card decision-loja" data-action="switch-to-loja">
+            <span class="decision-tag">VOCÊ VEM ATÉ A GENTE</span>
+            <h4 class="decision-title">BELATTO LOJA</h4>
+            <p class="decision-desc">
+              Quero comer no local, curtir o salão climatizado ou fazer retirada no balcão.
+            </p>
+          </button>
+
+          <button type="button" class="btn-decision-card decision-delivery" data-action="switch-to-delivery">
+            <span class="decision-tag">A GENTE CHEGA ATÉ VOCÊ</span>
+            <h4 class="decision-title">BELATTO DELIVERY</h4>
+            <p class="decision-desc">
+              Quero pedir de onde estiver e receber meu lanche quentinho, ou retirar na base.
+            </p>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       13. MOBILE STICKY BAR
+       ==================================================================== -->
+  <div class="mobile-sticky-bar">
+    <button type="button" class="btn-mobile-order-sticky" data-action="open-decision-modal">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <span>Pedir Agora: Escolha a Unidade</span>
+    </button>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toast-notice" role="alert">
+    <span id="toast-text">Redirecionando...</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
